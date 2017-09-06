@@ -32,4 +32,4 @@ def demo():
   numPixels = np.n
   colorWipe((0,0,100)) 
   time.sleep(0.2)
-  clearWipe()
+  
