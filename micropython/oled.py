@@ -27,9 +27,13 @@ def heartBeat():
     oled.show()
     time.sleep(0.3)
     clear()
-    
+
 def love():
   drawEyes(SMALL_HEART)
+  oled.show()
+  
+def bigLove():
+  drawEyes(BIG_HEART)
   oled.show()
 
 def sleepy():

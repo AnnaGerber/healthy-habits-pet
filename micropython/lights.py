@@ -18,9 +18,10 @@ def colorWipe(color, delay=0.01):
 def randomWipe(delay=0.01):
   global np
   numPixels = np.n
-  for t in range(0, 5):
+  for t in range(0, 8):
+    color = (math.floor(ord(uos.urandom(1))/4 * 3), math.floor(ord(uos.urandom(1))/3 * 4), math.floor(ord(uos.urandom(1))/2 * 2))
     for i in range(numPixels):
-      np[i] = (math.floor(ord(uos.urandom(1))/4), math.floor(ord(uos.urandom(1))/3), math.floor(ord(uos.urandom(1))/2))
+      np[i] = color
       time.sleep(delay)
       np.write()
 
