@@ -1,0 +1,8 @@
+cloud-app/target/*
+cloud-app/target/HealthyHabitsBackend.war
+cloud-app/.settings
+cloud-app/.apt_generated
+cloud-app/.classpath
+cloud-app/.factorypath
+cloud-app/.project
+cloud-app/target/

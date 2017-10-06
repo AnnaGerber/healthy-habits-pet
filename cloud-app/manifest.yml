@@ -1,0 +1,7 @@
+---
+applications:
+ - name: HealthyHabitsBackend
+   random-route: true
+   path: target/HealthyHabitsBackend.war
+   memory: 256M
+   instances: 1
