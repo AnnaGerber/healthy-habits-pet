@@ -93,7 +93,7 @@ def main():
         reminded = True
       client.connect()
       # non-blocking check for messages
-      client.subscribe(b"iot-2/type/ESP8266/id/pet2/cmd/update-tracker/fmt/json")
+      client.subscribe(b"iot-2/cmd/update-tracker/fmt/json")
       client.check_msg()
       client.disconnect()
       time.sleep(0.01)
