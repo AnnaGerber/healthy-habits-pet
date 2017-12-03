@@ -10,6 +10,7 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Application;
 
@@ -59,9 +60,9 @@ public class HabitAPI extends Application {
      * GET http://localhost:9080/HealthyHabitsBackend/api/tracker/remind
      */
       @GET
-      @Path("/remind")
-      public String remind() {
-  		reminderPublisher.remind("good");
+      @Path("/remind/{status}")
+      public String remind(@PathParam("status") String status) {
+  		reminderPublisher.remind(status);
   		return "OK";
       }
 }

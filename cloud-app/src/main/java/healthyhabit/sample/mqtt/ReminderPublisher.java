@@ -37,8 +37,8 @@ public class ReminderPublisher  {
 	protected static final int MQTT_PORT = 8883;
 	protected static final String MQTT_PROTOCOL = "ssl://";
 	
-	protected static final String topic = "iot-2/type/ESP8266/id/pet2/cmd/update-tracker/fmt/json";
-	//"iot-2/cmd/update-tracker/fmt/json";
+	protected static final String topic = "iot-2/type/ESP8266/id/HealthyHabitPet/cmd/update-tracker/fmt/json";
+	// HealthyHabitPet ESP8266 device subscribes to "iot-2/cmd/update-tracker/fmt/json" to receive
 	
 	MqttAsyncClient mqttAsyncClient = null;
 	MqttConnectOptions mqttOptions;
